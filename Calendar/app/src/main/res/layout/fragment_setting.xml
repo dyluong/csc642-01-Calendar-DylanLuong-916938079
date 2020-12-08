@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="ui.settings.SettingsFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="top |center"
+
+                >
+                <TextView
+                    android:id="@+id/settings_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="Settings"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize= "10pt"
+                    />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settings_spacing"/>
+                <Button
+                    android:id="@+id/settings_display_btn"
+                    android:layout_height="@dimen/settings_btn_height"
+                    android:layout_width="match_parent"
+                    android:text="Display"
+                    android:paddingTop="@dimen/settings_padding"
+                    android:paddingBottom="@dimen/settings_padding"
+                    android:background="@drawable/setting_btn"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settings_spacing"/>
+                <Button
+                    android:id="@+id/settings_notification_btn"
+                    android:layout_height="@dimen/settings_btn_height"
+                    android:layout_width="match_parent"
+                    android:text="Notification"
+                    android:padding="@dimen/settings_padding"
+                    android:background="@drawable/setting_btn"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settings_spacing"/>
+                <Button
+                    android:id="@+id/settings_customization_btn"
+                    android:layout_height="@dimen/settings_btn_height"
+                    android:layout_width="match_parent"
+                    android:text="Customization"
+                    android:padding="@dimen/settings_padding"
+                    android:background="@drawable/setting_btn"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settings_spacing"/>
+
+                <Button
+                    android:id="@+id/settings_help_btn"
+                    android:layout_height="@dimen/settings_btn_height"
+                    android:layout_width="match_parent"
+                    android:text="Help"
+                    android:padding="@dimen/settings_padding"
+                    android:background="@drawable/setting_btn"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

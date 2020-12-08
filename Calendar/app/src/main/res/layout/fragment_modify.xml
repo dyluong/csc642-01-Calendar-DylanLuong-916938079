@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modifycard_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.modify_card.ModifyFragment"
+
+    >
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/home_listofplans_table"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/close_modifycard_btn"
+                android:background="@drawable/create_card_btn_close"
+                android:layout_width="@dimen/createcard_btn_close_width"
+                android:layout_height="@dimen/createcard_btn_close_height"
+                android:layout_gravity="right"
+                android:text="X"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:background="@color/white"
+                >
+                <!--                            Header                               -->
+
+                <TextView
+                    android:id="@+id/modifycard_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit a Card "
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="10dp"
+                    />
+
+                <!--                            Title                               -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/modifycard_title_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/createcard_padding_top_bot"
+                        android:paddingBottom="@dimen/createcard_padding_top_bot"
+                        android:paddingLeft="@dimen/createcard_padding_left_right"
+                        android:paddingRight="@dimen/createcard_padding_left_right"
+                        />
+                    <EditText
+                        android:id="@+id/modifycard_title_input"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/createcard_padding_edittext"
+                        />
+                </LinearLayout>
+                <!--                            Type                              -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/modifycard_type_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/createcard_padding_top_bot"
+                        android:paddingBottom="@dimen/createcard_padding_top_bot"
+                        android:paddingLeft="@dimen/createcard_padding_left_right"
+                        android:paddingRight="@dimen/createcard_padding_left_right"
+                        />
+                    <CheckBox
+                        android:id="@+id/modifycard_type_btn_plan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Plan"
+                        android:background="@drawable/plan_card_btn"
+                        android:clickable="true"
+                        android:focusable="true" />
+                    <CheckBox
+                        android:id="@+id/modifycard_type_btn_habit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Habit"
+                        android:background="@drawable/habit_card_btn"/>
+                    <CheckBox
+                        android:id="@+id/modifycard_type_btn_plan_goal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Goal"
+                        android:background="@drawable/goal_card_btn"/>
+
+                </LinearLayout>
+                <!--                            Time Bracket                               -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/modifycard_time_bracket_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Bracket: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/createcard_padding_top_bot"
+                        android:paddingBottom="@dimen/createcard_padding_top_bot"
+                        android:paddingLeft="@dimen/createcard_padding_left_right"
+                        android:paddingRight="@dimen/createcard_padding_left_right"
+                        />
+                    <!--                            Start Time Bracket                               -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="22dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date"/>
+
+
+                        <DatePicker
+                            android:id="@+id/modifycard_startDate"
+                            style="@style/date_picker_theme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX=".80"
+                            android:scaleY=".80" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"/>
+                        <TimePicker
+                            android:id="@+id/modifycard_startTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:timePickerMode="spinner"
+                            android:scaleX=".80"
+                            android:scaleY=".80"/>
+                    </LinearLayout>
+                    <!--                            End Time Bracket                               -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="22dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date "
+                            android:textStyle="bold"/>
+                        <DatePicker
+                            android:id="@+id/modifycard_endDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/date_picker_theme"
+                            android:scaleX=".80"
+                            android:scaleY=".80"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time "
+                            android:textStyle="bold"/>
+                        <TimePicker
+                            android:id="@+id/modifycard_endTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:timePickerMode="spinner"
+                            android:scaleX=".80"
+                            android:scaleY=".80"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--                            Description                               -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/modifycard_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:paddingTop="@dimen/createcard_padding_top_bot"
+                        android:paddingBottom="@dimen/createcard_padding_top_bot"
+                        android:paddingLeft="@dimen/createcard_padding_left_right"
+                        android:paddingRight="@dimen/createcard_padding_left_right"
+                        />
+                    <EditText
+                        android:id="@+id/modifycard_description_input"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+
+                        />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/modifycard_btn_save"
+                    android:background="@drawable/create_card_btn_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center|bottom"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

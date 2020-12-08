@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="textsize_daily">24sp</dimen>
+    <dimen name="home_padding_tablerow">15dp</dimen>
+    <dimen name="home_tablesize_width">300dp</dimen>
+    <dimen name="home_tablesize_height">400dp</dimen>
+    <dimen name="home_container_above_table_height">100dp</dimen>
+    <dimen name="home_container_above_table_width">300dp</dimen>
+    <dimen name="createcard_body_width">300dp</dimen>
+    <dimen name="createcard_body_height">525dp</dimen>
+    <dimen name="createcard_padding_top_bot">30dp</dimen>
+    <dimen name="createcard_padding_left_right">4dp</dimen>
+    <dimen name="createcard_padding_edittext">10dp</dimen>
+    <dimen name="card_height">100dp</dimen>
+    <dimen name="card_width">200dp</dimen>
+    <dimen name="settings_btn_height">100dp</dimen>
+    <dimen name="settings_padding">5dp</dimen>
+    <dimen name="createcard_btn_close_height">40dp</dimen>
+    <dimen name="createcard_btn_close_width">40dp</dimen>
+    <dimen name="settings_spacing">20dp</dimen>
+    <dimen name="textSize_multipler">1</dimen>
+    <dimen name="customization_header_text_size">18sp</dimen>
+
+</resources>

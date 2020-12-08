@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customization_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="ui.settings.CustomizationFragment">
+
+    <Space android:layout_height="35dp" android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_height="300dp"
+        android:layout_width="350dp"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:background="@color/light_white">
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/close_customization_btn"
+                android:background="@drawable/create_card_btn_close"
+                android:layout_width="@dimen/createcard_btn_close_width"
+                android:layout_height="@dimen/createcard_btn_close_height"
+                android:layout_gravity="right"
+                android:text="X"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customization"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="22dp"
+                    />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_height="300dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:text="Set Color Theme:"
+                    android:textSize="@dimen/customization_header_text_size"
+                    android:padding="5dp"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Color Code: "
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+                    <EditText
+                        android:id="@+id/settings_customization_theme_input"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="#"
+                        />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|bottom"
+                    >
+                    <Button
+                        android:id="@+id/settings_customization_btn_theme_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Default"
+                        android:background="@drawable/customization_btn"
+                        android:textColor="@color/white"
+                        android:padding="3dp"
+                        />
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+                    <Button
+                        android:id="@+id/settings_customization_btn_theme_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Save"
+                        android:layout_gravity="right"
+                        android:background="@drawable/customization_btn"
+                        android:textColor="@color/white"
+                        android:padding="3dp"/>
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

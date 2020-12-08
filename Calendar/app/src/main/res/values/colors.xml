@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">	#514ab5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="black">#000000</color>
+    <color name="light_green">#5efd82</color>
+    <color name="colorAccent">#106b77</color>
+    <color name="dark_black">#1E1D20</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#808080</color>
+    <color name="plan_card">#20df7b</color>
+    <color name="plan_card_pressed">#1cc16a</color>
+    <color name="habit_card">#2b8ad4</color>
+    <color name="habit_card_pressed">#2473b1</color>
+    <color name="goal_card">#e8ea15</color>
+    <color name="goal_card_pressed">#cbcc13</color>
+    <color name="card_button">#d5ddcb</color>
+    <color name="light_white">#e3e9dd</color>
+    <color name="theme">#00ff0000</color>
+    <color name="default_theme">#00ff0000</color>
+</resources>

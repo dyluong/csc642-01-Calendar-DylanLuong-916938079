@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/habit_card"/>
+    <corners android:radius="80px"/>
+    <size android:width="@dimen/card_width" android:height="@dimen/card_height"/>
+    <padding android:left="@dimen/home_padding_tablerow"
+        android:right="@dimen/home_padding_tablerow"
+        android:top="@dimen/home_padding_tablerow"
+        android:bottom="@dimen/home_padding_tablerow"/>
+</shape>

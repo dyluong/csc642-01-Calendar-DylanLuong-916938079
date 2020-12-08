@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="ui.settings.HelpFragment">
+
+    <Space android:layout_height="35dp" android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_height="300dp"
+            android:layout_width="350dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:background="@color/light_white">
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:id="@+id/close_help_btn"
+                    android:background="@drawable/create_card_btn_close"
+                    android:layout_width="@dimen/createcard_btn_close_width"
+                    android:layout_height="@dimen/createcard_btn_close_height"
+                    android:layout_gravity="right"
+                    android:text="X"
+                    android:textColor="@color/white"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="22dp"
+                        />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <LinearLayout
+                    android:layout_height="300dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Contact Us"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Email: Calendar@calendar.com"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Phone number: 1-123-4567"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Leave a Review:"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <Button
+                        android:id="@+id/submit_help_button"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:text="Submit"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
